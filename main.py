@@ -1,6 +1,4 @@
-import time
-
-from system import System
+from DCS.system import System
 
 
 if __name__ == '__main__':
