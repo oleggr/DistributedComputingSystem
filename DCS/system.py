@@ -32,7 +32,7 @@ class System:
 
     def show_workers(self):
         for worker in self.get_workers():
-            print(worker.n, '>', worker.arr)
+            print(worker.n, '>', worker.data)
 
     def get_workers(self):
         for worker in self.workers:

@@ -11,6 +11,6 @@ class SquareWorker(AbstractWorker):
         counter = 0
 
         while counter < self.limit:
-            self.arr.append(self.n ** 2)
+            self.data.append(self.n ** 2)
             counter += 1
             time.sleep(1)

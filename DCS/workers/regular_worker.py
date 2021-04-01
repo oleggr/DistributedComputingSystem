@@ -11,6 +11,6 @@ class RegularWorker(AbstractWorker):
         counter = 0
 
         while counter < self.limit:
-            self.arr.append(self.n)
+            self.data.append(self.n)
             counter += 1
             time.sleep(1)

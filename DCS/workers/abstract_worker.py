@@ -2,12 +2,12 @@
 class AbstractWorker:
 
     n: int
-    arr: list
+    data: list
     limit: int
 
     def __init__(self, n: int):
         self.n = n
-        self.arr = []
+        self.data = []
 
     def run(self):
         pass
