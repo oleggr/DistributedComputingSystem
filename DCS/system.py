@@ -1,6 +1,7 @@
 import threading
 
-from DCS.workers.worker import Worker
+from DCS.workers.regular_worker import RegularWorker
+from DCS.workers.abstract_worker import AbstractWorker
 
 
 class System:
@@ -9,7 +10,10 @@ class System:
         self.workers = []
 
     def create_worker(self, n: int):
-        self.workers.append(Worker(n))
+        self.workers.append(RegularWorker(n))
+
+    def add_worker(self, worker: AbstractWorker):
+        self.workers.append(worker)
 
     def run_workers(self):
         threads_num = len(self.workers)

@@ -3,7 +3,7 @@ import time
 from DCS.workers.abstract_worker import AbstractWorker
 
 
-class Worker(AbstractWorker):
+class RegularWorker(AbstractWorker):
 
     limit = 5
 
