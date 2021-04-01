@@ -1,6 +1,6 @@
 import threading
 
-from DCS.worker import Worker
+from DCS.workers.worker import Worker
 
 
 class System:

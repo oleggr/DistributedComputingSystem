@@ -1,13 +1,11 @@
 import time
 
+from DCS.workers.abstract_worker import AbstractWorker
 
-class Worker:
+
+class Worker(AbstractWorker):
 
     limit = 5
-
-    def __init__(self, n: int):
-        self.n = n
-        self.arr = []
 
     def run(self):
         counter = 0
