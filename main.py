@@ -17,4 +17,3 @@ if __name__ == '__main__':
     system.run_workers()
     print('---------------------------------')
     system.show_workers()
-
