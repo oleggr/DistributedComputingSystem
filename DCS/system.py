@@ -31,5 +31,9 @@ class System:
             t.join()
 
     def show_workers(self):
+        for worker in self.get_workers():
+            print(worker.n, '>', worker.arr)
+
+    def get_workers(self):
         for worker in self.workers:
-            print(worker.n, '>>', worker.arr)
+            yield worker
